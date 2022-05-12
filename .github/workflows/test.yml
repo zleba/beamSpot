@@ -5,9 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     container: zleba/rooteigen:latest
     steps:
-      - name: Compile
+      - name: Compile and Run
         uses: actions/checkout@v3
       - run: make
-      - name: Run
-        uses: actions/checkout@v3
       - run: ./runBS
