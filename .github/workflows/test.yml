@@ -8,4 +8,5 @@ jobs:
       - name: Compile and Run
         uses: actions/checkout@v3
       - run: make
+      - run: wget ${{ secrets.DataFileAddress }}   -O data/bucket28.root
       - run: ./runBS
